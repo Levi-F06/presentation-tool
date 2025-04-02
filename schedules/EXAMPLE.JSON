@@ -1,0 +1,21 @@
+{
+  "speakers": [
+    {
+      "id": 1,
+      "name": "Levi Flanagan",
+      "talkName": "never used JSON before",
+      "time": "17:00",
+    },
+    {
+      "id": 2,
+      "name": "Brandon Bevan",
+      "talkName": "i didnt show up to placement",
+      "time": "17:30",
+    }
+  ]
+}
+
+id names will match with the images sent, so if speaker 1 is in room2 the image will be named
+images/room2/1.png so ensure that the files match the id number of speaker
+
+This example can be copy and pasted into each room JSON file
