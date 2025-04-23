@@ -1,0 +1,78 @@
+{
+  "day one": [
+    {
+      "id": "studio-l-1",
+      "talkname": "Calm in the Chaos: a Stoic guide to leading in the Permacrisis",
+      "speaker": "Ceri Newton-Sargunar",
+      "time": "10:30",
+      "duration": 45,
+      "track": "Organisations"
+    },
+    {
+      "id": "studio-l-2",
+      "talkname": "First Steps towards an Agile NHS",
+      "speaker": "Robert Macadam",
+      "time": "11:30",
+      "duration": 45,
+      "track": "Organisations"
+    },
+    {
+      "id": "studio-l-3",
+      "talkname": "Crossing the transformation finish line at His Majesty's Passport Office",
+      "speaker": "Sarah Ravenhill and Caitlin Smith",
+      "time": "14:00",
+      "duration": 45,
+      "track": "Organisations"
+    },
+    {
+      "id": "studio-l-4",
+      "talkname": "Crossing the divide: taking the blame out of large transformations",
+      "speaker": "Victoria Wiggins and Charles Kubicek",
+      "time": "15:00",
+      "duration": 45,
+      "track": "Organisations"
+    },
+    {
+      "id": "studio-l-5",
+      "talkname": "Secure by Design: The Secret Weapon of High-Performing Organisations",
+      "speaker": "Jeremy Linter and Robert Guegan",
+      "time": "16:00",
+      "duration": 45,
+      "track": "Organisations"
+    }
+  ],
+  "day two": [
+    {
+      "id": "studio-l-6",
+      "talkname": "Applying Agile to Community-Building : Bromford's Place-Based Initiative",
+      "speaker": "Geoff Watts and Emma Hopkinson-Spark",
+      "time": "10:30",
+      "duration": 45,
+      "track": "Organisations"
+    },
+    {
+      "id": "studio-l-7",
+      "talkname": "Scaling delivery management at Just Eat Takeaway",
+      "speaker": "Francesca Salvati",
+      "time": "11:30",
+      "duration": 45,
+      "track": "Organisations"
+    },
+    {
+      "id": "studio-l-8",
+      "talkname": "The agile evolution in customer experience at Ford Motor Company Europe",
+      "speaker": "Benjamin Igna",
+      "time": "13:15",
+      "duration": 45,
+      "track": "Organisations"
+    },
+    {
+      "id": "studio-l-9",
+      "talkname": "From chaos to complexity at the University of Nottingham",
+      "speaker": "Karl Royle and Taidhgh O'Regan",
+      "time": "14:15",
+      "duration": 45,
+      "track": "Organisations"
+    }
+  ]
+}

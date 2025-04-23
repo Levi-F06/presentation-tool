@@ -1,0 +1,78 @@
+{
+  "day one": [
+    {
+      "id": "studio-c-1",
+      "talkname": "Migrating from a monolith to a new service at Stack Overflow",
+      "speaker": "Connell Sharp",
+      "time": "10:30",
+      "duration": 45,
+      "track": "Engineering"
+    },
+    {
+      "id": "studio-c-2",
+      "talkname": "A defence of technical excellence",
+      "speaker": "Chris Simon",
+      "time": "11:30",
+      "duration": 45,
+      "track": "Engineering"
+    },
+    {
+      "id": "studio-c-3",
+      "talkname": "Dude, I broke my satellite - integration testing in space",
+      "speaker": "Daniel Evans",
+      "time": "14:00",
+      "duration": 45,
+      "track": "Engineering"
+    },
+    {
+      "id": "studio-c-4",
+      "talkname": "Platform-as-a-product from the trenches",
+      "speaker": "Cat Morris",
+      "time": "15:00",
+      "duration": 45,
+      "track": "Engineering"
+    },
+    {
+      "id": "studio-c-5",
+      "talkname": "Less about tests more about testability a tester in the platform engineering world",
+      "speaker": "Cristiano Cunha",
+      "time": "16:00",
+      "duration": 45,
+      "track": "Engineering"
+    }
+  ],
+  "day two": [
+    {
+      "id": "studio-c-6",
+      "talkname": "Three powerful strategies from Headforwards to prevent and detect bugs",
+      "speaker": "Andy Weir",
+      "time": "10:30",
+      "duration": 45,
+      "track": "Engineering"
+    },
+    {
+      "id": "studio-c-7",
+      "talkname": "A journey to disaster at Bloom & Wild",
+      "speaker": "Martin Whittington",
+      "time": "11:30",
+      "duration": 45,
+      "track": "Engineering"
+    },
+    {
+      "id": "studio-c-8",
+      "talkname": "Why keeping your system secure is a bit like decluttering",
+      "speaker": "Elinor Ní Chatháin",
+      "time": "13:15",
+      "duration": 45,
+      "track": "Engineering"
+    },
+    {
+      "id": "studio-c-9",
+      "talkname": "Pipeline patterns and antipatterns - things your pipeline should (not) do",
+      "speaker": "Daniel Raniz Raneland",
+      "time": "14:15",
+      "duration": 45,
+      "track": "Engineering"
+    }
+  ]
+}

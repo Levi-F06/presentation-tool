@@ -1,0 +1,30 @@
+{
+  "day one": [
+    {
+      "id": "studio-e-1",
+      "talkname": "Product Showdown at the Dragon's Den!",
+      "speaker":Munish Malik and Mohit Chandna",
+      "time": "10:30",
+      "duration": 45,
+      "track": "Workshops"
+    },
+    {
+      "id": "studio-e-2",
+      "talkname": "The Cynefin Crystal Maze",
+      "speaker": "Andy Hannaford and Kathy Antol",
+      "time": "14:00",
+      "duration": 45,
+      "track": "Workshops"
+    }
+  ],
+  "day two": [
+    {
+      "id": "studio-e-3",
+      "talkname": "Cluedo at the beach - crack the customer value code",
+      "speaker": "Amy Aspinall and Swarnadipa Banerjee",
+      "time": "10:30",
+      "duration": 45,
+      "track": "Workshops"
+    }
+  ]
+}

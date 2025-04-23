@@ -1,0 +1,30 @@
+{
+  "day one": [
+    {
+      "id": "studio-f-1",
+      "talkname": "Unleash Collective Genius With Liberating Structures: A Facilitator's Toolkit",
+      "speaker": "Nicola Schoonderwoerd",
+      "time": "10:30",
+      "duration": 45,
+      "track": "Workshops"
+    },
+    {
+      "id": "studio-f-2",
+      "talkname": "Shapeshifting for shifting priorities",
+      "speaker": "Lilith Harris",
+      "time": "14:00",
+      "duration": 45,
+      "track": "Workshops"
+    }
+  ],
+  "day two": [
+    {
+      "id": "studio-f-3",
+      "talkname": "Technical Leaders for Humanity - the helpful card game",
+      "speaker": "Clare Sudbery",
+      "time": "10:30",
+      "duration": 45,
+      "track": "Workshops"
+    },
+  ]
+}

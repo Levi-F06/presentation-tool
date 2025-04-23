@@ -1,0 +1,78 @@
+{
+  "day one": [
+    {
+      "id": "studio-a-1",
+      "talkname": "How psychological safety at Rowe helped me to release my true self",
+      "speaker": "Terri Lamerton",
+      "time": "10:30",
+      "duration": 45,
+      "track": "Teams"
+    },
+    {
+      "id": "studio-a-2",
+      "talkname": "Feedback loops save lives - a frontline combat medic perspective",
+      "speaker": "Matt Spruce",
+      "time": "11:30",
+      "duration": 45,
+      "track": "Teams"
+    },
+    {
+      "id": "studio-a-3",
+      "talkname": "Long-lived teams are damaging to your organisation",
+      "speaker": "Alun Coppack",
+      "time": "14:00",
+      "duration": 45,
+      "track": "Teams"
+    },
+    {
+      "id": "studio-a-4",
+      "talkname": "Will it ever end? What we learnt from getting a mammoth technology integration back on track",
+      "speaker": "Ella Schofield and Stephen Janaway",
+      "time": "15:00",
+      "duration": 45,
+      "track": "Teams"
+    },
+    {
+      "id": "studio-a-5",
+      "talkname": "Agility's best-kept secret: it's all about Risk Management!",
+      "speaker": "Anne Gabrillagues",
+      "time": "16:00",
+      "duration": 45,
+      "track": "Teams"
+    }
+  ],
+  "day two": [
+    {
+      "id": "studio-a-6",
+      "talkname": "Becoming an agile Head of Engineering",
+      "speaker": "Gerald Benishcke",
+      "time": "10:30",
+      "duration": 45,
+      "track": "Teams"
+    },
+    {
+      "id": "studio-a-7",
+      "talkname": "Agility Unscripted : Building a laser for a scientific research facility- without the playbook !",
+      "speaker": "David Michel",
+      "time": "11:30",
+      "duration": 45,
+      "track": "Teams"
+    },
+    {
+      "id": "studio-a-8",
+      "talkname": "High Performing Teams and Organizational Effectiveness : Lessons from Agility in Military Aviation",
+      "speaker": "James Edmonson and Iain Jardine",
+      "time": "13:15",
+      "duration": 45,
+      "track": "Teams"
+    },
+    {
+      "id": "studio-a-9",
+      "talkname": "Beyond borders - navigating cultural challenges",
+      "speaker": "Manuela Raidl",
+      "time": "14:15",
+      "duration": 45,
+      "track": "Teams"
+    }
+  ]
+}

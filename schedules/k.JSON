@@ -1,0 +1,78 @@
+{
+  "day one": [
+    {
+      "id": "studio-k-1",
+      "talkname": "Beyond Usability: Applying Behavioural Science to Create Truly Engaging Experiences",
+      "speaker": "Annika-Marie Leick",
+      "time": "10:30",
+      "duration": 45,
+      "track": "Design & Product"
+    },
+    {
+      "id": "studio-k-2",
+      "talkname": "Easy riders - how Dutch Railways made bike sharing a big hit",
+      "speaker": "Veerle Verhagen",
+      "time": "11:30",
+      "duration": 45,
+      "track": "Design & Product"
+    },
+    {
+      "id": "studio-k-3",
+      "talkname": "From Vision to Impact: The Strategy Sprint",
+      "speaker": "Rachel Dubois",
+      "time": "14:00",
+      "duration": 45,
+      "track": "Design & Product"
+    },
+    {
+      "id": "studio-k-4",
+      "talkname": "Free your mind and the rest will follow - Delete your Backlog",
+      "speaker": "Christopher May",
+      "time": "15:00",
+      "duration": 45,
+      "track": "Design & Product"
+    },
+    {
+      "id": "studio-k-5",
+      "talkname": "Decarbonising with Agile: Lessons from Launching a World-First Cleantech Product",
+      "speaker": "Claire Kemp",
+      "time": "16:00",
+      "duration": 45,
+      "track": "Design & Product"
+    }
+  ],
+  "day two": [
+    {
+      "id": "studio-k-6",
+      "talkname": "How Product & Data Science collaborated to save half a million dollars a year at Elsevier",
+      "speaker": "Kunal Ahluwalia",
+      "time": "10:30",
+      "duration": 45,
+      "track": "Design & Product"
+    },
+    {
+      "id": "studio-k-7",
+      "talkname": "Strike plates and handles: UX, doors and a desperate need for cake",
+      "speaker": "David Broomfield",
+      "time": "11:30",
+      "duration": 45,
+      "track": "Design & Product"
+    },
+    {
+      "id": "studio-k-8",
+      "talkname": "Navigating the triangle of tension - wants, needs, and feasibility in product management",
+      "speaker": "Faye Benfield",
+      "time": "13:15",
+      "duration": 45,
+      "track": "Design & Product"
+    },
+    {
+      "id": "studio-k-9",
+      "talkname": "Zero - bug policy success",
+      "speaker": "Peter Hilton",
+      "time": "14:15",
+      "duration": 45,
+      "track": "Design & Product"
+    }
+  ]
+}
