@@ -1,11 +1,10 @@
 import { createServer } from "http";
 import { readFile } from "fs";
-import url from 'node:url';
+import url from "node:url";
 
 const INDEX_PAGE = "/src/html/index.html";
 
 createServer((req, res) => {
-   
   const path = url.parse(req.url === "/" ? INDEX_PAGE : req.url);
   readFile(`.${path.pathname}`, (err, data) => {
     if (err) {
@@ -15,5 +14,5 @@ createServer((req, res) => {
       res.write(data);
       res.end();
     }
-  })
+  });
 }).listen(8000);
