@@ -12,6 +12,11 @@
   src: url("/src/font/KGSecondChancesSolid.ttf");
 }
 
+:root {
+  /* This variable gets changed based on the current room */
+  --main: white;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -125,6 +130,7 @@ p {
   padding: 0 .5vw;
   align-items: center;
   border-bottom: .5vh solid green;
+  background-color: white;
 }
 
 #right-side {
