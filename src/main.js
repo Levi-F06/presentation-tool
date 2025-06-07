@@ -18,13 +18,18 @@ const dayMap = {
   "2": "two",
 };
 
+// function getTime() {
+//   // using a function so I don't have to format the time constantly
+//   const t = new Date()
+//   // the padstart isn't neccesary for the hours since everything starts at 10 
+//   // this would be a problem if the events started at 8 due to the times being
+//   // compared to eachother ig 9:30 > 12:30 when really 09:30 < 12:30
+//   return `${t.getHours()}:${t.getMinutes().toString().padStart(2, "0")}`;
+// }
+
+// Fake temp function so I can mess around with what the time is
 function getTime() {
-  // using a function so I don't have to format the time constantly
-  const t = new Date()
-  // the padstart isn't neccesary for the hours since everything starts at 10 
-  // this would be a problem if the events started at 8 due to the times being
-  // compared to eachother ig 9:30 > 12:30 when really 09:30 < 12:30
-  return `${t.getHours()}:${t.getMinutes().toString().padStart(2, "0")}`;
+  return "10:30";
 }
 
 function updateClock() {
@@ -48,9 +53,27 @@ async function getData() {
   }
 }
 
+function updateRoom(data) {
+  const time = getTime();
+  let mainTalk;
+  let nextTalk;
+  for (let i = 0; i < data.length; i++) {
+    const talkTime = data[i]["time"];
+    if (talkTime > time) {
+      mainTalk = i;
+      nextTalk = i + 1;
+      break;
+    }
+  }
+  console.log(data[mainTalk]);
+  console.log(data[nextTalk]);
+
+
+}
+
 async function main() {
   const data = await getData();
-  console.log(data);
+  updateRoom(data);
   updateClock();
   setInterval(updateClock, 1000);
 }
