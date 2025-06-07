@@ -2,7 +2,7 @@
 // changing then
 
 const [
-  _mainImg,
+  mainImg,
   _mainTitle,
   _timer,
   _trackName,
@@ -29,11 +29,21 @@ const dayMap = {
 
 // Fake temp function so I can mess around with what the time is
 function getTime() {
-  return "10:30";
+  return "14:30";
 }
 
 function updateClock() {
   time.innerHTML = `<p>${getTime()}</p>`;
+}
+
+function createImages(speakers) {
+  let res = ""
+  for (const speaker of speakers.split(" and ")) {
+    const path = speaker.split(" ").join("_") + ".jpg";
+    // so should've done ts in react
+    res += `<img src="/src/images/people/${path}" />`;
+  }
+  return res;
 }
 
 async function getData() {
@@ -67,6 +77,18 @@ function updateRoom(data) {
   }
   console.log(data[mainTalk]);
   console.log(data[nextTalk]);
+
+  // idk what to even say about this line...
+  // ${createImages(data[mainTalk].getSpeakers())} 
+
+  mainImg.innerHTML = `
+  <div id="main-person-images">
+    ${createImages(data[mainTalk]["speaker"])} 
+  </div>
+  <div id="main-person-overlay">
+    ${createImages(data[mainTalk]["speaker"])}
+  </div>
+  `;
 }
 
 async function main() {
