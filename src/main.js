@@ -21,7 +21,7 @@ const dayMap = {
 // function getTime() {
 //   // using a function so I don't have to format the time constantly
 //   const t = new Date()
-//   // the padstart isn't neccesary for the hours since everything starts at 10 
+//   // the padstart isn't neccesary for the hours since everything starts at 10
 //   // this would be a problem if the events started at 8 due to the times being
 //   // compared to eachother ig 9:30 > 12:30 when really 09:30 < 12:30
 //   return `${t.getHours()}:${t.getMinutes().toString().padStart(2, "0")}`;
@@ -67,8 +67,6 @@ function updateRoom(data) {
   }
   console.log(data[mainTalk]);
   console.log(data[nextTalk]);
-
-
 }
 
 async function main() {
