@@ -29,7 +29,7 @@ const dayMap = {
 
 // Fake temp function so I can mess around with what the time is
 function getTime() {
-  return "14:30";
+  return "12:30";
 }
 
 function updateClock() {
@@ -37,9 +37,14 @@ function updateClock() {
 }
 
 function createImages(speakers) {
-  let res = ""
+  let res = "";
   for (const speaker of speakers.split(" and ")) {
-    const path = speaker.split(" ").join("_") + ".jpg";
+    // this funky line i found online will remove all accent characters from names
+    const speakerName = speaker.normalize("NFD").replace(
+      /[\u0300-\u036f]/g,
+      "",
+    );
+    const path = speakerName.split(" ").join("_") + ".jpg";
     // so should've done ts in react
     res += `<img src="/src/images/people/${path}" />`;
   }
@@ -59,6 +64,7 @@ async function getData() {
   } else {
     const json = await res.json().then((res) => res);
     // eg day 1 in the json
+
     return json[`day ${day}`];
   }
 }
@@ -79,7 +85,7 @@ function updateRoom(data) {
   console.log(data[nextTalk]);
 
   // idk what to even say about this line...
-  // ${createImages(data[mainTalk].getSpeakers())} 
+  // ${createImages(data[mainTalk].getSpeakers())}
 
   mainImg.innerHTML = `
   <div id="main-person-images">
