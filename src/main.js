@@ -29,7 +29,7 @@ const dayMap = {
 
 // Fake temp function so I can mess around with what the time is
 function getTime() {
-  return "12:30";
+  return "14:30";
 }
 
 function updateClock() {
