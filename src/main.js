@@ -3,12 +3,12 @@
 
 const [
   mainImg,
-  _mainTitle,
+  mainTitle,
   _timer,
-  _trackName,
-  _trackImg,
-  _nextTitle,
-  _nextImg,
+  trackName,
+  trackImg,
+  nextTitle,
+  nextImg,
   time,
 ] = document.querySelectorAll(".dynamic");
 
@@ -95,6 +95,24 @@ function updateRoom(data) {
     ${createImages(data[mainTalk]["speaker"])}
   </div>
   `;
+
+  mainTitle.innerHTML = `
+  <h1 id="title">${data[mainTalk]["talkname"]}</h1>
+  <p id="speaker">${data[mainTalk]["speaker"]}</p>
+ 
+  `;
+
+  trackName.textContent = data[mainTalk]["track"];
+  const trackImgFile = data[mainTalk]["track"].replaceAll(" ", "");
+  trackImg.src = `/src/images/${trackImgFile}.png`;
+
+  nextTitle.innerHTML = `
+  <h2>Up next at ${data[nextTalk]["time"]}</h2>
+  <p>${data[nextTalk]["talkname"]}</p>
+  <p>${data[nextTalk]["speaker"]}</p>
+  `;
+
+  nextImg.innerHTML = createImages(data[nextTalk]["speaker"]);
 }
 
 async function main() {
