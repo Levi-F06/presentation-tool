@@ -6,7 +6,7 @@ let currentTalk;
 const [
   mainImg,
   mainTitle,
-  _timer,
+  timer,
   trackName,
   trackImg,
   nextTitle,
@@ -45,6 +45,33 @@ function updateClock(data) {
   time.innerHTML = `<p>${currentTime}</p>`;
   if (currentTime > data[currentTalk]["time"]) {
     updateRoom(data);
+  }
+}
+
+function updateTimer(data) {
+  // fucking maths with time strings
+  // proposterous
+
+  // making a set year and month cause i only care about the time
+  const time = new Date();
+  // this bit is unnecesary in final product and is fucking boring as shit
+  const tt = getTime().split(":");
+  time.setHours(tt[0]);
+  time.setMinutes(tt[1]);
+  // shit over
+  const t = data[currentTalk]["time"].split(":");
+  const nextTime = new Date();
+  nextTime.setHours(t[0]);
+  nextTime.setMinutes(t[1]);
+  nextTime.setSeconds(0);
+  const difference = (nextTime - time) / 1000;
+  console.log(time);
+  console.log(nextTime);
+  console.log(difference);
+  if (difference > 60) {
+    timer.textContent = `${Math.floor(difference / 60)} minutes`;
+  } else {
+    timer.textContent = `${difference} seconds!`;
   }
 }
 
@@ -139,6 +166,7 @@ async function main() {
   updateRoom(data);
   updateClock(data);
   setInterval(updateClock, 1000, data);
+  setInterval(updateTimer, 1000, data);
 }
 
 main();
