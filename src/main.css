@@ -14,8 +14,17 @@
 
 :root {
   /* This variable gets changed based on the current room */
-  --main: white;
+  --main: green;
 }
+
+/*
+ COLORS
+  yellow - #fdba3e
+  blue - #87cfc6
+  red - #f05336
+  orange? - #cb671c
+
+*/
 
 * {
   padding: 0;
@@ -91,7 +100,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: green;
+  background-color: var(--main);
 }
 
 #images {
@@ -152,7 +161,7 @@ p {
   color: black;
   padding: 0 .5vw;
   align-items: center;
-  border-bottom: .5vh solid green;
+  border-bottom: .5vh solid var(--main);
   background-color: white;
 
   /* never used grid wish me luck! */
@@ -181,6 +190,7 @@ p {
 #speaker-title {
   align-self: flex-start;
   width: 90%;
+  text-shadow: 1px 1px black;
 }
 
 #title {
@@ -237,8 +247,8 @@ p {
   width: 10vh;
   object-fit: cover;
   border-radius: 100%;
-  border: 2px solid green;
-  box-shadow: 0 0 10px green;
+  border: 2px solid var(--main);
+  box-shadow: 0 0 10px var(--main);
 }
 
 #creds {
@@ -252,7 +262,7 @@ p {
 
 /* AGHHHDHD */
 .shadow {
-  text-shadow: 0 1px green;
+  text-shadow: 0 1px var(--main);
   font-size: 2vh;
 }
 
@@ -267,14 +277,14 @@ p {
 
 #time p {
   font-size: 6vh;
-  text-shadow: 3px 3px green;
+  text-shadow: 3px 3px var(--main);
 }
 
 #background {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  opacity: 0.2;
+  opacity: 0.1;
 }
 
 #timer-text {

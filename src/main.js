@@ -14,36 +14,45 @@ const [
   time,
 ] = document.querySelectorAll(".dynamic");
 
+const colours = {
+  "Teams": "#87cfc6",
+  "Organisations": "#f05336",
+  "Design & Product": "#fdba3e",
+  "Workshops": "#cb671c",
+};
+
+const r = document.querySelector(":root");
+
 // made the params numbers so now we have this!!
 const dayMap = {
   "1": "one",
   "2": "two",
 };
 
-// function getTime() {
-//   // using a function so I don't have to format the time constantly
-//   const t = new Date()
-//   // the padstart isn't neccesary for the hours since everything starts at 10
-//   // this would be a problem if the events started at 8 due to the times being
-//   // compared to eachother ig 9:30 > 12:30 when really 09:30 < 12:30
-//   return `${t.getHours()}:${t.getMinutes().toString().padStart(2, "0")}`;
-// }
+function getTime() {
+  // using a function so I don't have to format the time constantly
+  const t = new Date();
+  // the padstart isn't neccesary for the hours since everything starts at 10
+  // this would be a problem if the events started at 8 due to the times being
+  // compared to eachother ig 9:30 > 12:30 when really 09:30 < 12:30
+  return `${t.getHours()}:${t.getMinutes().toString().padStart(2, "0")}`;
+}
 
 // Fake temp function so I can mess around with what the time is
-let thing = 0;
-function getTime() {
-  if (thing < 5) {
-    thing++;
-    return "14:30";
-  } else {
-    return "15:59";
-  }
-}
+// let thing = 0;
+// function getTime() {
+//   if (thing < 5) {
+//     thing++;
+//     return "10:00";
+//   } else {
+//     return "12:59";
+//   }
+// }
 
 function updateClock(data) {
   const currentTime = getTime();
   time.innerHTML = `<p>${currentTime}</p>`;
-  if (currentTime > data[currentTalk]["time"]) {
+  if (currentTalk != null && currentTime > data[currentTalk]["time"]) {
     updateRoom(data);
   }
 }
@@ -141,6 +150,9 @@ function updateRoom(data) {
   const trackImgFile = data[mainTalk]["track"].replaceAll(" ", "");
   trackImg.src = `/src/images/${trackImgFile}.png`;
 
+  // will change colours to the right room.
+  r.style.setProperty("--main", colours[data[mainTalk]["track"]]);
+
   if (data[nextTalk] !== undefined) {
     nextTitle.innerHTML = `
   <h2>Up next at ${data[nextTalk]["time"]}</h2>
@@ -158,8 +170,8 @@ function updateRoom(data) {
 
 async function main() {
   const data = await getData();
-  updateRoom(data);
   updateClock(data);
+  updateRoom(data);
   setInterval(updateClock, 1000, data);
   setInterval(updateTimer, 1000, data);
 }
