@@ -119,13 +119,19 @@ function updateRoom(data) {
   const trackImgFile = data[mainTalk]["track"].replaceAll(" ", "");
   trackImg.src = `/src/images/${trackImgFile}.png`;
 
-  nextTitle.innerHTML = `
+  if (data[nextTalk] !== undefined) {
+    nextTitle.innerHTML = `
   <h2>Up next at ${data[nextTalk]["time"]}</h2>
   <p>${data[nextTalk]["talkname"]}</p>
   <p>${data[nextTalk]["speaker"]}</p>
   `;
-
-  nextImg.innerHTML = createImages(data[nextTalk]["speaker"]);
+    nextImg.innerHTML = createImages(data[nextTalk]["speaker"]);
+  } else {
+    nextTitle.innerHTML = `
+    <p>This will be the final talk in this room!</p>
+    `;
+    nextImg.innerHTML = "";
+  }
 }
 
 async function main() {
