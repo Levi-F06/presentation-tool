@@ -1,5 +1,7 @@
 // This is def a bad way of doing it but like as long as nothing else needs
 // changing then
+//
+let currentTalk;
 
 const [
   mainImg,
@@ -28,12 +30,22 @@ const dayMap = {
 // }
 
 // Fake temp function so I can mess around with what the time is
+let thing = 0;
 function getTime() {
-  return "14:30";
+  if (thing < 5) {
+    thing++;
+    return "14:30";
+  } else {
+    return "15:59";
+  }
 }
 
-function updateClock() {
-  time.innerHTML = `<p>${getTime()}</p>`;
+function updateClock(data) {
+  const currentTime = getTime();
+  time.innerHTML = `<p>${currentTime}</p>`;
+  if (currentTime > data[currentTalk]["time"]) {
+    updateRoom(data);
+  }
 }
 
 function createImages(speakers) {
@@ -76,13 +88,14 @@ function updateRoom(data) {
   for (let i = 0; i < data.length; i++) {
     const talkTime = data[i]["time"];
     if (talkTime > time) {
+      currentTalk = i;
       mainTalk = i;
       nextTalk = i + 1;
       break;
     }
   }
-  console.log(data[mainTalk]);
-  console.log(data[nextTalk]);
+
+  console.log(data);
 
   // idk what to even say about this line...
   // ${createImages(data[mainTalk].getSpeakers())}
@@ -118,8 +131,8 @@ function updateRoom(data) {
 async function main() {
   const data = await getData();
   updateRoom(data);
-  updateClock();
-  setInterval(updateClock, 1000);
+  updateClock(data);
+  setInterval(updateClock, 1000, data);
 }
 
 main();
