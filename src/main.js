@@ -65,9 +65,6 @@ function updateTimer(data) {
   nextTime.setMinutes(t[1]);
   nextTime.setSeconds(0);
   const difference = (nextTime - time) / 1000;
-  console.log(time);
-  console.log(nextTime);
-  console.log(difference);
   if (difference > 60) {
     timer.textContent = `${Math.floor(difference / 60)} minutes`;
   } else {
@@ -121,8 +118,6 @@ function updateRoom(data) {
       break;
     }
   }
-
-  console.log(data);
 
   // idk what to even say about this line...
   // ${createImages(data[mainTalk].getSpeakers())}
